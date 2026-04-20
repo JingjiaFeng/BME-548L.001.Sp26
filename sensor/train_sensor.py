@@ -9,7 +9,7 @@ from torch.optim.lr_scheduler import CosineAnnealingLR
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils import get_psnr
 
-from model_iso_only import ConditionedDenoiser, load_warmstart
+from model_injection import ConditionedDenoiser, load_warmstart
 from data_sidd_sensor import SIDDSensorDataset, get_split
 
 def quick_eval(model, val_loader, device, max_batches=32):

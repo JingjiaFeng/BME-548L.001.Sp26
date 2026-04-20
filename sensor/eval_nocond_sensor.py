@@ -5,7 +5,7 @@ import torch
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils import get_psnr
 
-from model_iso_only import ConditionedDenoiser
+from model_injection import ConditionedDenoiser
 from data_sidd_sensor import SIDDSensorDataset, get_split, get_tier
 
 CKPT = 'checkpoints/sensor/best.pth'

@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from model import BaseDenoiser_SIDD
 from utils import embed_param
 
-from model_iso_only import ConditionedDenoiser
+from model_injection import ConditionedDenoiser
 from data_sidd_iso import SIDDIsoDataset, get_split, parse_scene_folder, ISO_MIN, ISO_MAX
 
 TARGET_ISOS = [100, 800, 3200, 6400]

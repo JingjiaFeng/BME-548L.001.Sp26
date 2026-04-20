@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from model import BaseDenoiser_SIDD
 from utils import embed_param, get_psnr
 
-from model_iso_only import ConditionedDenoiser
+from model_injection import ConditionedDenoiser
 from data_sidd_sensor import SIDDSensorDataset, get_split, get_tier, SENSOR_QUALITY, SENSOR_MIN, SENSOR_MAX
 
 def tile_image(img_chw, patch=256):
