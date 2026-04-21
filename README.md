@@ -19,9 +19,9 @@ Download [SIDD Medium sRGB](https://abdokamel.github.io/sidd/) and extract to yo
 ### Checkpoints
 
 Our models are initialized from a pretrained NAFBlock-based U-Net backbone provided by [Oh et al.](https://github.com/OBAKSA/CPADNet). We injected single-parameter conditioning (ISO-only or sensor-only, 9-dim), zero-initialize the new AdaLN layers, and fine-tune for 10K iterations on SIDD.
-The baseline checkpoint can be downloaded from https://drive.google.com/file/d/16WxyO6zfMLh1mD9T5NxO0Umv8_TUz_CH/view?usp=share_link
+The baseline checkpoint can be downloaded from https://drive.google.com/drive/folders/1a8x_v27Qmhu65b0V0im6OpYB29uKDETU?usp=share_link
 
-Download our trained checkpoints from https://drive.google.com/drive/folders/1R_-tSXJ5pEbvV-FP2Y51ecVrOcPlErA-?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto and place as:
+Download our trained checkpoints from https://drive.google.com/drive/folders/1R_-tSXJ5pEbvV-FP2Y51ecVrOcPlErA-?usp=share_link and place as:
 
     checkpoints/
     ├── iso/
