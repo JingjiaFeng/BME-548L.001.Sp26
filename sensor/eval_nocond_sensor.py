@@ -45,7 +45,7 @@ def main():
             psnrs = []
             for np_p, gt_p in zip(noisy_patches, gt_patches):
                 inp = np_p.unsqueeze(0).to(device)
-                zero_embed = torch.zeros(1, 9).to(device)
+                one_embed = torch.ones(1, 9).to(device)
                 out = torch.clamp(model(inp, zero_embed), 0, 1)
 
                 d = out.squeeze(0).cpu().numpy()
