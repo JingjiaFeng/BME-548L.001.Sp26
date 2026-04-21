@@ -103,7 +103,7 @@ def main():
                 elif args.mode == 'sensor_cond':
                     out = model(inp, sensor_embed.unsqueeze(0).to(device))
                 elif args.mode == 'sensor_nocond':
-                    out = model(inp, torch.zeros(1, 9).to(device))
+                    out = model(inp, torch.ones(1, 9).to(device))
 
                 out = torch.clamp(out, 0, 1)
                 d = out.squeeze(0).cpu().numpy()
