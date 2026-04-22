@@ -9,7 +9,18 @@
 </p>
 
 Investigating how camera physical parameters affect deep learning-based image denoising. We inject ISO (dynamic, per-shot) and sensor quality (static, per-device) as conditioning signals into a NAFNet-based U-Net via Adaptive Layer Normalization (AdaLN), and evaluate their impact on denoising performance using the SIDD Medium dataset.
-![Architecture](figures/architecture.png)
+<p align="center">
+  <img src="figures/architecture.png" width="48%"/>
+</p>
+
+## Visual Results
+
+<p align="center">
+  <img src="figures/spatial_comparison.png" width="48%"/>
+  <img src="figures/frequency_comparison.png" width="48%"/>
+</p>
+
+More result figures (PSNR, SSIM, Fourier analysis, etc.) can be found in the [`figures/`](figures/) folder.
 
 ## Setup
 
